@@ -1,0 +1,12 @@
+[0m[[0m[31merror[0m] [0m[0m/home/zz277/CS516/hw2_code/src/main/scala/PageRank.scala:41:74: value size is not a member of org.apache.spark.rdd.RDD[(String, Array[String])][0m
+[0m[[0m[31merror[0m] [0m[0m                    case(rank, urls) => urls.map(link=>(link, rank/links.size))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zz277/CS516/hw2_code/src/main/scala/PageRank.scala:41:49: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Array[Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m required: TraversableOnce[?][0m
+[0m[[0m[31merror[0m] [0m[0m                    case(rank, urls) => urls.map(link=>(link, rank/links.size))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/zz277/CS516/hw2_code/src/main/scala/PageRank.scala:43:40: value reduceByKey is not a member of org.apache.spark.rdd.RDD[Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m                var ranks_n = contribs.reduceByKey(_ + _).mapValues(15.0 / N + 0.85 * _)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
